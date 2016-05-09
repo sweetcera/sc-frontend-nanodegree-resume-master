@@ -77,8 +77,8 @@ clickLocations = [];
 function logClicks(x,y) {
   clickLocations.push(
     {
-      x: x,
-      y: y
+      "x": x,
+      "y": y
     }
   );
   console.log('x location: ' + x + '; y location: ' + y);
