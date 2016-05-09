@@ -85,7 +85,7 @@ function logClicks(x,y) {
 }
 
 $(document).click(function(loc) {
-  // your code goes here!
+  logClicks(loc.pageX, loc.pageY);
 });
 
 
@@ -106,6 +106,7 @@ function initializeMap() {
   var locations;
 
   var mapOptions = {
+    scrollwheel: false,
     disableDefaultUI: true
   };
 
