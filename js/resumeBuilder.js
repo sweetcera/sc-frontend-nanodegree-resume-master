@@ -43,71 +43,71 @@ bio.display();
 
 
 
-//var education = {
-//	"schools": [
-//		{
-//			"name": "Eastern Connecticut State University",
-//			"location": "Willimantic, CT",
-//			"degree": "BS",
-//			"majors": ["Communications", "Fine Arts History"]
-//			"dates": "1999 - 2003",
-//			"url": "http://www1.easternct.edu"
-//		},
-//		{
-//			"name": "Connecticut School of Broadcasting",
-//			"location": "Pawcatuck, CT",
-//			"degree": "Certifications",
-//			"majors": ["Radio Broadcasting", "Video Production"]
-//			"dates": "2006",
-//			"url": "http://www.gocsb.com"
-//		}
-//	],
-//	"onlineCourses": [
-//		{
-//			"title": "JavaScript Basics",
-//			"school": "Udacity",
-//			"dates": "May 2016",
-//			"url": "http://udacity.com/ud804"
-//		}
-//	],
-//	myschools: function() {
-//		for (school in education.schools) {
-//			$("#education").append(HTMLschoolStart);
-//			var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
-//			formattedName = formattedName.replace("#", education.schools[school].url);
-//			var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);			
-//			$(".education-entry:last").append(formattedName + formattedDegree);
-//			var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-//			$(".education-entry:last").append(formattedDates);
-//			var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-//			$(".education-entry:last").append(formattedLocation);
-//			var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
-//			$(".education-entry:last").append(formattedMajors);
-//			$(".education-entry:last").append("<br><div><hr class='section-hr'></div>");
-//		}
-//	},
-//	myOnlineCourses: function() {
-//		if (education.onlineCourses.length > 0 ) {
-//			$("#education").append(HTMLonlineClasses);
-//			for (course in education.onlineCourses) {
-//				$("#education").append(HTMLschoolStart);
-//				var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
-//				formattedTitle = formattedTitle.replace("#", education.onlineCourses[course].url);
-//				var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
-//				$(".education-entry:last").append(formattedTitle + formattedSchool);
-//				var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
-//				$(".education-entry:last").append(formattedDates);
-//				// var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
-//				// formattedURL = formattedURL.replace("#", education.onlineCourses[course].url);
-//				// $(".education-entry:last").append(formattedURL);
-//				$(".education-entry:last").append("<br><div><hr class='section-hr'></div>");
-//			}			
-//		}
-//	}
-//};
+var education = {
+	"schools": [
+		{
+			"name": "Eastern Connecticut State University",
+			"location": "Willimantic, CT",
+			"degree": "BS",
+			"majors": ["Communications", "Fine Arts History"],
+			"dates": "1999 - 2003",
+			"url": "http://www1.easternct.edu"
+		},
+		{
+			"name": "Connecticut School of Broadcasting",
+			"location": "Pawcatuck, CT",
+			"degree": "Certifications",
+			"majors": ["Radio Broadcasting", "Video Production"],
+			"dates": "2006",
+			"url": "http://www.gocsb.com"
+		}
+	],
+	"onlineCourses": [
+		{
+			"title": "JavaScript Basics",
+			"school": "Udacity",
+			"dates": "May 2016",
+			"url": "http://udacity.com/ud804"
+		}
+	],
+	myschools: function() {
+		for (school in education.schools) {
+			$("#education").append(HTMLschoolStart);
+			var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
+			formattedName = formattedName.replace("#", education.schools[school].url);
+			var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);			
+			$(".education-entry:last").append(formattedName + formattedDegree);
+			var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+			$(".education-entry:last").append(formattedDates);
+			var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+			$(".education-entry:last").append(formattedLocation);
+			var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
+			$(".education-entry:last").append(formattedMajors);
+			$(".education-entry:last").append("<br><div><hr class='section-hr'></div>");
+		}
+	},
+	myOnlineCourses: function() {
+		if (education.onlineCourses.length > 0 ) {
+			$("#education").append(HTMLonlineClasses);
+			for (course in education.onlineCourses) {
+				$("#education").append(HTMLschoolStart);
+				var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
+				formattedTitle = formattedTitle.replace("#", education.onlineCourses[course].url);
+				var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
+				$(".education-entry:last").append(formattedTitle + formattedSchool);
+				var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
+				$(".education-entry:last").append(formattedDates);
+				// var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
+				// formattedURL = formattedURL.replace("#", education.onlineCourses[course].url);
+				// $(".education-entry:last").append(formattedURL);
+				$(".education-entry:last").append("<br><div><hr class='section-hr'></div>");
+			}			
+		}
+	}
+};
 
-//education.myschools();
-//education.myOnlineCourses();
+education.myschools();
+education.myOnlineCourses();
 
 
 
