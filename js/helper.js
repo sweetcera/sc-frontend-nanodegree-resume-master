@@ -122,7 +122,7 @@ function initializeMap() {
   function locationFinder() {
 
     // initializes an empty array
-    var locations = ["Norwich", "Colchester", "Hartford", "Willimantic", "Glastonbury"];
+    var locations = ["Norwich, CT", "Colchester, CT", "Hartford, CT", "Willimantic, CT", "Glastonbury, CT"];
 
     // adds the single location property from bio to the locations array
     locations.push(bio.contacts.location);
