@@ -97,9 +97,6 @@ var education = {
 				$(".education-entry:last").append(formattedTitle + formattedSchool);
 				var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
 				$(".education-entry:last").append(formattedDates);
-				// var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
-				// formattedURL = formattedURL.replace("#", education.onlineCourses[course].url);
-				// $(".education-entry:last").append(formattedURL);
 				$(".education-entry:last").append("<br><div><hr class='section-hr'></div>");
 			}			
 		}
