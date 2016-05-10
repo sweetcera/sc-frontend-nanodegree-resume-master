@@ -65,7 +65,7 @@ The International Name challenge in Lesson 2 where you'll create a function that
 $(document).ready(function() {
   $('button').click(function() {
     var iName = inName(name) || function(){};
-    $('#name').html(iName);
+    $('#name').html(iName);  
   });
 });
 
@@ -122,7 +122,7 @@ function initializeMap() {
   function locationFinder() {
 
     // initializes an empty array
-    var locations = ["Norwich, CT", "Colchester, CT", "Hartford, CT", "Willimantic, CT", "Glastonbury, CT"];
+    var locations = [];
 
     // adds the single location property from bio to the locations array
     locations.push(bio.contacts.location);
